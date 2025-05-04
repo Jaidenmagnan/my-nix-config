@@ -162,6 +162,11 @@
     clang-tools_16
     fzf
     ripgrep
+    nil
+
+
+
+    
 
     
     grim

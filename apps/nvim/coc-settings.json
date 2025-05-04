@@ -1,6 +1,7 @@
 {
-    "clangd.path" : "/run/current-system/sw/bin/clangd",
+  "clangd.path" : "/run/current-system/sw/bin/clangd",
   "rust-analyzer.server.path": "/etc/profiles/per-user/jaiden/bin/rust-analyzer",
-  "coc.preferences.formatOnSaveFiletypes": ["*"]
+  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp"],
+  "nil.path": "/run/current-system/sw/bin/nil"
 }
 
