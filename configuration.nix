@@ -156,6 +156,7 @@
     dunst
     alsa-utils
     neovim
+    nixfmt
     nodejs
 
     clang_16
