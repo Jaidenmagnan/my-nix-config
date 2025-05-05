@@ -33,7 +33,6 @@
   home.packages = with pkgs; [
   	neofetch
         lunar-client
-        steam
 	yafetch
 	firefox
 	spotify

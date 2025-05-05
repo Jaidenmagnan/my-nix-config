@@ -11,6 +11,8 @@
       inputs.home-manager.nixosModules.home-manager
     ];
 
+
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -23,6 +25,12 @@
 	};
 
   };
+
+  hardware.opengl = {
+		enable = true;
+	};
+
+  services.xserver.videoDrivers = ["nvidia"];
 
 
 #config.vim = {
@@ -146,6 +154,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  programs.steam.enable = true;
   
 
 
@@ -158,6 +167,7 @@
     neovim
     nixfmt
     nodejs
+    steam
 
     clang_16
     clang-tools_16
