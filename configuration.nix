@@ -164,6 +164,9 @@
     neovim
     htop
     nodejs
+
+    man-pages
+    man-pages-posix
     steam
 
     clang_16
