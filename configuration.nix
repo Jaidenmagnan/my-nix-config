@@ -213,13 +213,13 @@ environment = {
     OBSIDIAN_USE_WAYLAND = "1";
     
     # For Steam/Proton games
-    PROTON_USE_WINED3D = "1";
-    PROTON_ENABLE_NVAPI = "1";
-    DXVK_ENABLE_NVAPI = "1";
-    
-    # Force Wayland for games
-    SDL_VIDEODRIVER = "wayland";
-    __GLX_VENDOR_LIBRARY_NAME = "mesa";
+    #PROTON_USE_WINED3D = "1";
+    #PROTON_ENABLE_NVAPI = "1";
+    #DXVK_ENABLE_NVAPI = "1";
+    #
+    ## Force Wayland for games
+    #SDL_VIDEODRIVER = "wayland";
+    #__GLX_VENDOR_LIBRARY_NAME = "mesa";
   };
 };
 
