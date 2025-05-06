@@ -17,6 +17,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+
   # home manager
   home-manager = {
   	extraSpecialArgs = {inherit inputs; };
@@ -69,6 +70,8 @@
   hardware.graphics = {
 	enable = true;
   };
+
+  hardware.opengl.enable = true;
 
   hardware.nvidia = {
   	modesetting.enable = true;
@@ -159,6 +162,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     wget
+    xdg-desktop-portal-gtk
     qemu
     dunst
     alsa-utils
@@ -197,11 +201,22 @@
     wrapperFeatures.gtk = true;
    };
 
+     # bigger tty fonts
+  console.font =
+    "${pkgs.terminus_font}/share/consolefonts/ter-u28n.psf.gz";
+  services.xserver.dpi = 180;
+  environment.variables = {
+    GDK_SCALE = "2";
+    GDK_DPI_SCALE = "0.5";
+    _JAVA_OPTIONS = "-Dsun.java2d.uiScale=2";
+  };
+
+
    services.greetd = {
 	enable = true;
 	settings = {
 		default_session = {
-			command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd sway";
+			command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd sway --unsupported-gpu";
 			user = "greeter";
 		};
 	};
