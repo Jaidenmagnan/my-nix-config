@@ -32,6 +32,7 @@
 
   home.packages = with pkgs; [
   	neofetch
+	obsidian
         lunar-client
 	yafetch
 	firefox
