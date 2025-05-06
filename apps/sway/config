@@ -27,7 +27,7 @@ gaps outer 10
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /run/current-system/sw/share/backgrounds/sway/)
-output * bg /home/jaiden/nixos/wallpapers/chrono.png fill
+output * bg /home/jaiden/nixos/wallpapers/vinlandback.png fill
 #
 # Example configuration:
 #

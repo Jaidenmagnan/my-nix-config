@@ -26,10 +26,6 @@
 
   };
 
-  hardware.opengl = {
-		enable = true;
-	};
-
   services.xserver.videoDrivers = ["nvidia"];
 
 
@@ -162,10 +158,11 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     wget
+    qemu
     dunst
     alsa-utils
     neovim
-    nixfmt
+    htop
     nodejs
     steam
 
