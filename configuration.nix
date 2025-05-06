@@ -45,6 +45,7 @@
   users.users.jaiden.shell = pkgs.zsh;
 
 
+
   # experimental
   nix.settings.experimental-features = ["nix-command" "flakes"];
 

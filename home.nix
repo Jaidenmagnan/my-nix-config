@@ -32,6 +32,7 @@
 
   home.packages = with pkgs; [
   	neofetch
+	vscode
 	obsidian
         lunar-client
 	yafetch
@@ -46,6 +47,7 @@
   	./apps/kitty.nix
 	./apps/sway/sway.nix
 	./apps/zsh.nix
+	./apps/vscode.nix
 
 
   ];
