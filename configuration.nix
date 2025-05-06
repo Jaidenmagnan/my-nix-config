@@ -202,21 +202,32 @@
    };
 
      # bigger tty fonts
-  console.font =
-    "${pkgs.terminus_font}/share/consolefonts/ter-u28n.psf.gz";
-  services.xserver.dpi = 180;
-  environment.variables = {
-    GDK_SCALE = "2";
-    GDK_DPI_SCALE = "0.5";
-    _JAVA_OPTIONS = "-Dsun.java2d.uiScale=2";
-  };
 
+environment = {
+  sessionVariables = {
+    # General Wayland support
+    NIXOS_OZONE_WL = "1";
+    ELECTRON_OZONE_PLATFORM_HINT = "wayland";
+    
+    # Specific for Obsidian (from before)
+    OBSIDIAN_USE_WAYLAND = "1";
+    
+    # For Steam/Proton games
+    PROTON_USE_WINED3D = "1";
+    PROTON_ENABLE_NVAPI = "1";
+    DXVK_ENABLE_NVAPI = "1";
+    
+    # Force Wayland for games
+    SDL_VIDEODRIVER = "wayland";
+    __GLX_VENDOR_LIBRARY_NAME = "mesa";
+  };
+};
 
    services.greetd = {
 	enable = true;
 	settings = {
 		default_session = {
-			command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd sway --unsupported-gpu";
+			command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd sway ";
 			user = "greeter";
 		};
 	};
