@@ -176,6 +176,7 @@
     protonup
     alsa-utils
     neovim
+    zip
     htop
     nodejs
     mangohud
