@@ -32,7 +32,6 @@
 
   home.packages = with pkgs; [
   	neofetch
-	mpd 
 	ncmpcpp
 	vscode
 	obsidian
