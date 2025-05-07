@@ -45,6 +45,10 @@
   programs.zsh.enable = true;
   users.users.jaiden.shell = pkgs.zsh;
 
+   virtualisation.virtualbox.host.enable = true;
+   users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+   virtualisation.virtualbox.host.enableExtensionPack = true;
+
 
 
   # experimental
@@ -155,6 +159,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+
   
 
 
@@ -165,10 +172,12 @@
     xdg-desktop-portal-gtk
     qemu
     dunst
+    protonup
     alsa-utils
     neovim
     htop
     nodejs
+    mangohud
 
     man-pages
     man-pages-posix
@@ -206,6 +215,7 @@
 environment = {
   sessionVariables = {
     # General Wayland support
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/homes/jaiden/.steam/root/compatabilitytools.d";
     NIXOS_OZONE_WL = "1";
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
     
