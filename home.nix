@@ -32,6 +32,7 @@
 
   home.packages = with pkgs; [
   	neofetch
+	qbittorrent
 	logisim-evolution
 	ncmpcpp
 	mpd
