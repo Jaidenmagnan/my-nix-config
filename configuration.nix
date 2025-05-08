@@ -51,6 +51,8 @@
      virtualisation.virtualbox.guest.enable = true;
   virtualisation.virtualbox.guest.dragAndDrop = true;
 
+  boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
+
 
 
   # experimental
@@ -163,17 +165,6 @@
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
 
-  services.mpd = {
-	enable = true;
-	musicDirectory = "/home/jaiden/Music";
-	extraConfig = ''
-  audio_output {
-    type "pulse"
-    name "My PulseAudio" # this can be whatever you want
-  }
-'';
-
-  };
 
   
 
@@ -188,7 +179,6 @@
     protonup
     alsa-utils
     neovim
-    mpd
     zip
     htop
     nodejs

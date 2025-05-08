@@ -32,7 +32,9 @@
 
   home.packages = with pkgs; [
   	neofetch
+	logisim-evolution
 	ncmpcpp
+	mpd
 	vscode
 	obsidian
         lunar-client
