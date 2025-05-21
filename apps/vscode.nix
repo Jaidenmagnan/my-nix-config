@@ -9,6 +9,8 @@
 		arcticicestudio.nord-visual-studio-code
 		vscodevim.vim
 		yzhang.markdown-all-in-one
+		dbaeumer.vscode-eslint
+		mhutchie.git-graph
   ];
   
   };

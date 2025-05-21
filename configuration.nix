@@ -45,7 +45,7 @@
   programs.zsh.enable = true;
   users.users.jaiden.shell = pkgs.zsh;
 
-   #virtualisation.virtualbox.host.enable = true;
+   virtualisation.virtualbox.host.enable = true;
    users.extraGroups.vboxusers.members = [ "jaiden" ];
    virtualisation.virtualbox.host.enableExtensionPack = true;
      virtualisation.virtualbox.guest.enable = true;

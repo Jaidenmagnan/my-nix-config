@@ -45,6 +45,8 @@
 	discord
 	kitty
 	oh-my-zsh
+	bun
+	nodejs
   ];
 
   imports = [
