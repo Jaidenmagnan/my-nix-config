@@ -46,6 +46,7 @@
 	kitty
 	oh-my-zsh
 	bun
+	heroku
 	nodejs
   ];
 

@@ -58,6 +58,8 @@
   # experimental
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  virtualisation.docker.enable = true;
+
   # fonts
   fonts.packages = with pkgs; [
   	
@@ -67,6 +69,9 @@
   	noto-fonts-emoji
   	liberation_ttf
   	fira-code
+	docker
+	heroku
+	postgresql
 
   	fira-code-symbols
   	mplus-outline-fonts.githubRelease
