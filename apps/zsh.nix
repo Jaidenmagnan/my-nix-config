@@ -8,6 +8,8 @@ programs.zsh = {
 	shellAliases = {
 		ll = "ls -l";
 		update = "sudo nixos-rebuild switch --flake /home/jaiden/nixos";
+		dcu = "sudo docker compose up";
+		dcd = "sudo docker compose down";
 	};
   };
 

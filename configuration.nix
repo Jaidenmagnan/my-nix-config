@@ -45,16 +45,6 @@
   programs.zsh.enable = true;
   users.users.jaiden.shell = pkgs.zsh;
 
-   virtualisation.virtualbox.host.enable = true;
-   users.extraGroups.vboxusers.members = [ "jaiden" ];
-   virtualisation.virtualbox.host.enableExtensionPack = true;
-     virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.dragAndDrop = true;
-
-  boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
-
-
-
   # experimental
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
