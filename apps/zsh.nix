@@ -10,6 +10,7 @@ programs.zsh = {
 		update = "sudo nixos-rebuild switch --flake /home/jaiden/nixos";
 		dcu = "sudo docker compose up";
 		dcd = "sudo docker compose down";
+		bot-logs = "heroku logs --tail --app neetcoder-production";
 	};
   };
 
