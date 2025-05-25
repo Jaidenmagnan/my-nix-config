@@ -44,6 +44,7 @@
 	spotify
 	discord
 	kitty
+	ruby
 	oh-my-zsh
 	bun
 	heroku
