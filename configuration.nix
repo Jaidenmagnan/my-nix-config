@@ -27,7 +27,9 @@
 
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
+  hardware.graphics = {
+  	enable = true;
+  };
 
 
 #config.vim = {
@@ -69,35 +71,6 @@
   	proggyfonts
 	];
 
-  #graphics
-  hardware.graphics = {
-	enable = true;
-  };
-
-
-  hardware.nvidia = {
-  	modesetting.enable = true;
-
-	# enable if sleep issues
-	powerManagement.enable = false;
-
-	# enable to powersave
-	powerManagement.finegrained = false;
-
-	open = false;
-
-	nvidiaSettings = true;
-
-
-    	package = config.boot.kernelPackages.nvidiaPackages.stable;
-
-	prime = {
-		sync.enable = true;
-		amdgpuBusId = "PCI:101:0:0";
-		nvidiaBusId = "PCI:1:0:0";
-	};
-
-  };
 
   environment.variables.EDITOR = "nvim";
 
@@ -169,7 +142,6 @@
   environment.systemPackages = with pkgs; [
     wget
     xdg-desktop-portal-gtk
-    qemu
     dunst
     protonup
     alsa-utils
