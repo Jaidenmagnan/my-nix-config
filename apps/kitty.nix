@@ -26,35 +26,36 @@
       inactive_tab_foreground = "#444";
       inactive_tab_background = "#999";
 
-      # Nord Theme Colors
-      foreground = "#D8DEE9";
-      background = "#2E3440";
-      selection_foreground = "#000000";
-      selection_background = "#FFFACD";
-      cursor = "#81A1C1";
-      
-      # Nord Colors
-      color0 = "#3B4252";
-      color1 = "#BF616A";
-      color2 = "#A3BE8C";
-      color3 = "#EBCB8B";
-      color4 = "#81A1C1";
-      color5 = "#B48EAD";
-      color6 = "#88C0D0";
-      color7 = "#E5E9F0";
-      color8 = "#4C566A";
-      color9 = "#BF616A";
-      color10 = "#A3BE8C";
-      color11 = "#EBCB8B";
-      color12 = "#81A1C1";
-      color13 = "#B48EAD";
-      color14 = "#8FBCBB";
-      color15 = "#ECEFF4";
-      
-      # URL handling
-      url_color = "#0087bd";
-      url_style = "curly";
-      
+      # Catppuccin Mocha Theme Colors
+	foreground = "#CDD6F4";
+	background = "#1E1E2E";
+	selection_foreground = "#1E1E2E";
+	selection_background = "#F5E0DC";
+	cursor = "#F5E0DC";
+	
+	# Catppuccin Mocha Colors
+	color0 = "#45475A";    # Surface1
+	color1 = "#F38BA8";    # Red
+	color2 = "#A6E3A1";    # Green
+	color3 = "#F9E2AF";    # Yellow
+	color4 = "#89B4FA";    # Blue
+	color5 = "#F5C2E7";    # Pink
+	color6 = "#94E2D5";    # Teal
+	color7 = "#BAC2DE";    # Subtext1
+	color8 = "#585B70";    # Surface2
+	color9 = "#F38BA8";    # Red
+	color10 = "#A6E3A1";   # Green
+	color11 = "#F9E2AF";   # Yellow
+	color12 = "#89B4FA";   # Blue
+	color13 = "#F5C2E7";   # Pink
+	color14 = "#94E2D5";   # Teal
+	color15 = "#A6ADC8";   # Subtext0
+	
+	# URL handling
+	url_color = "#89B4FA";
+	url_style = "curly";
+
+           
       # Bell
       enable_audio_bell = false;
     };

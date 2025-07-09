@@ -32,6 +32,7 @@
 
   home.packages = with pkgs; [
   	neofetch
+	inputs.zen-browser.packages.${pkgs.system}.default
 	qbittorrent
 	logisim-evolution
 	ncmpcpp

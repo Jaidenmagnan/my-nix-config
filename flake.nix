@@ -10,6 +10,8 @@
 	inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser.url = "github:youwen5/zen-browser-flake";
+
   };
 
   outputs = { self, nixpkgs, ... }@inputs: 
@@ -22,8 +24,6 @@
     inherit inputs system;
         };
       modules = [
-        # Import the previous configuration.nix we used,
-        # so the old configuration file still takes effect
         ./configuration.nix
       ];
     };

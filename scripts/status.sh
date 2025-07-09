@@ -29,6 +29,7 @@ while true; do
         charging_indicator=""
     fi
     
-    echo "$date_time | $battery%$charging_indicator"
+    #echo "$date_time | $battery%$charging_indicator"
+    echo "$date_time"
     sleep 1
 done
