@@ -58,7 +58,7 @@
 
   imports = [
   	./apps/kitty.nix
-	./apps/nvim/nvim.nix
+	./apps/nvim.nix
 	./apps/sway/sway.nix
 	./apps/zsh.nix
 	./apps/vscode.nix
