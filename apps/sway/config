@@ -19,6 +19,9 @@ set $term kitty
 # Your preferred application launcher
 set $menu wmenu-run
 
+set $ws1 1:www
+set $ws2 2:geany
+
 
 gaps inner 10
 gaps outer 10
