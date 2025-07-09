@@ -234,16 +234,16 @@ bar {
             statusline #b4befe
             #                   border    background text
             focused_workspace  #1a1a2e    #b4befe    #ffffff
-            active_workspace   #1a1a2e    #16213e    #ffa726
+            active_workspace   #1a1a2e    #16213e    #b4befe
             inactive_workspace #1a1a2e    #1a1a2e    #a0a0a0
             urgent_workspace   #1a1a2e    #ff6b6b    #ffffff
-            binding_mode       #1a1a2e    #ffa726    #1a1a2e
+            binding_mode       #1a1a2e    #b4befe    #1a1a2e
     }
 }
 
 # Window color settings
 # class                 border   backgr.  text     indicator
-client.focused          #b4befe  #b4befe  #ffffff  #ffa726
+client.focused          #b4befe  #b4befe  #ffffff  #b4befe
 client.unfocused        #16213e  #1a1a2e  #a0a0a0  #1a1a2e
 client.focused_inactive #16213e  #1a1a2e  #a0a0a0  #1a1a2e
 client.placeholder      #16213e  #1a1a2e  #a0a0a0  #1a1a2e

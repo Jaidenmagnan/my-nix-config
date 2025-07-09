@@ -34,6 +34,8 @@
   	neofetch
 	inputs.zen-browser.packages.${pkgs.system}.default
     	dunst
+	slack
+	calibre
 	qbittorrent
 	logisim-evolution
 	ncmpcpp
@@ -56,6 +58,7 @@
 
   imports = [
   	./apps/kitty.nix
+	./apps/nvim/nvim.nix
 	./apps/sway/sway.nix
 	./apps/zsh.nix
 	./apps/vscode.nix

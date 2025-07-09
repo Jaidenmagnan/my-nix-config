@@ -143,6 +143,7 @@
     wget
     xdg-desktop-portal-gtk
     protonup
+    adwaita-icon-theme
     alsa-utils
     neovim
     vlc

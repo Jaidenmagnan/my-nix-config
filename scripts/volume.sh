@@ -19,7 +19,7 @@ function send_notification {
     # https://en.wikipedia.org/wiki/Box-drawing_character
     bar=$(seq -s "─" $(($volume / 3)) | sed 's/[0-9]//g')
     # Send the notification
-    dunstify -i audio-volume-muted-blocking -t 1000 -r 2593 -u normal "    $bar"
+    dunstify -i audio-volume-muted -t 1000 -r 2593 -u normal "    $bar"
 }
 
 case $1 in
