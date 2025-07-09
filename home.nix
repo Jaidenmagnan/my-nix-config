@@ -59,7 +59,7 @@
   imports = [
   	./apps/kitty.nix
 	./apps/nvim.nix
-	./apps/sway/sway.nix
+	./apps/sway.nix
 	./apps/zsh.nix
 	./apps/vscode.nix
 	./apps/dunst.nix
