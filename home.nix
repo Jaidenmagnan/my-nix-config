@@ -33,6 +33,7 @@
   home.packages = with pkgs; [
   	neofetch
 	inputs.zen-browser.packages.${pkgs.system}.default
+    	dunst
 	qbittorrent
 	logisim-evolution
 	ncmpcpp
@@ -50,6 +51,7 @@
 	bun
 	heroku
 	nodejs
+	calibre
   ];
 
   imports = [
@@ -57,8 +59,7 @@
 	./apps/sway/sway.nix
 	./apps/zsh.nix
 	./apps/vscode.nix
-
-
+	./apps/dunst.nix
   ];
 
 

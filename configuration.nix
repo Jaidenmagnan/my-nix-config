@@ -142,7 +142,6 @@
   environment.systemPackages = with pkgs; [
     wget
     xdg-desktop-portal-gtk
-    dunst
     protonup
     alsa-utils
     neovim
