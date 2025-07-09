@@ -8,7 +8,7 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
-set $browser firefox
+set $browser zen 
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -233,7 +233,7 @@ bar {
             background #1a1a2e
             statusline #b4befe
             #                   border    background text
-            focused_workspace  #1a1a2e    #b4befe   #ffffff
+            focused_workspace  #1a1a2e    #b4befe    #ffffff
             active_workspace   #1a1a2e    #16213e    #ffa726
             inactive_workspace #1a1a2e    #1a1a2e    #a0a0a0
             urgent_workspace   #1a1a2e    #ff6b6b    #ffffff
