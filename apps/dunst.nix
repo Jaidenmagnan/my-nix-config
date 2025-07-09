@@ -4,9 +4,9 @@
     enable = true;
     settings = {
       global = {
-        frame_color = "#89b4fa";
+        frame_color = "#7287fd";
         separator_color = "frame";
-        highlight = "#89b4fa";
+        highlight = "#7287fd";
       };
       urgency_low = {
         background = "#1e1e2e";
