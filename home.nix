@@ -29,11 +29,15 @@
         defaultCursor = "Adwaita";
       };
     };
+  
+	programs.obsidian.enable = true;
 
   home.packages = with pkgs; [
   	neofetch
 	inputs.zen-browser.packages.${pkgs.system}.default
-    	dunst
+    dunst
+	sn-pro
+
 	slack
 	calibre
 	qbittorrent

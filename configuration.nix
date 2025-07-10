@@ -39,6 +39,7 @@
 #        };
 #
 #  };
+services.gvfs.enable = true;
 
 
   
@@ -57,6 +58,10 @@
   	
   	noto-fonts
 	nerd-fonts.fira-code
+	wine
+
+
+	xfce.thunar
   	noto-fonts-cjk-sans
   	noto-fonts-emoji
   	liberation_ttf
@@ -133,14 +138,14 @@
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
 
+  services.flatpak.enable = true;
 
   
-
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     wget
+	flatpak
     xdg-desktop-portal-gtk
     protonup
     adwaita-icon-theme
