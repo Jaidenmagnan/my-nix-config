@@ -50,7 +50,10 @@
 	heroku
 	nodejs
 	calibre
+	gnomeExtensions.open-bar
+	gnomeExtensions.dock-from-dash
   ];
+
 
   imports = [
 	  ../../apps/apps.nix
