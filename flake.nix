@@ -16,7 +16,7 @@
     system = "x86_64-linux";
   in {
     
-    nixosConfigurations.nixos = {
+    nixosConfigurations = {
       # PC Configuration
       pc = nixpkgs.lib.nixosSystem {
         specialArgs = {
@@ -36,6 +36,7 @@
           ./hosts/laptop/configuration.nix
         ];
       };
+
     };
   };
 }
