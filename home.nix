@@ -37,6 +37,7 @@
 	inputs.zen-browser.packages.${pkgs.system}.default
     dunst
 	sn-pro
+	zathura
 
 	slack
 	calibre
@@ -64,6 +65,7 @@
   	./apps/kitty.nix
 	./apps/nvim.nix
 	./apps/sway.nix
+	./apps/zathura.nix
 	./apps/zsh.nix
 	./apps/vscode.nix
 	./apps/dunst.nix
