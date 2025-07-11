@@ -59,6 +59,7 @@ services.gvfs.enable = true;
   	noto-fonts
 	nerd-fonts.fira-code
 	wine
+	powerline-fonts
 
 
 	xfce.thunar

@@ -28,10 +28,10 @@ map <PageUp> scroll half-up
 map <PageDown> scroll half-down
 map <BackSpace> scroll half-up
 map <Space> scroll half-down
-map h navigate previous
+map b navigate previous
 map n navigate next
 
-map b adjust_window best-fit
+map f adjust_window best-fit
 map H adjust_window best-fit
 map w adjust_window width
 map W adjust_window width

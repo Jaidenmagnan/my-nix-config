@@ -47,7 +47,8 @@
 	mpd
 	vscode
 	obsidian
-        lunar-client
+    lunar-client
+	direnv
 	yafetch
 	firefox
 	spotify
