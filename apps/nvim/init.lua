@@ -35,6 +35,7 @@ Plug('hrsh7th/cmp-path')
 Plug('hrsh7th/cmp-cmdline')
 Plug('hrsh7th/nvim-cmp')
 Plug('L3MON4D3/LuaSnip')
+Plug 'andweeb/presence.nvim'
 
 vim.call('plug#end')
 
@@ -51,6 +52,7 @@ require('plugins.colorizer')
 require('plugins.nvim-tree')
 require('plugins.mason-lsp')
 require('plugins.cmp')
+require('plugins.presence')
 
 -- here we move regular config to other files
 require('config.theme')

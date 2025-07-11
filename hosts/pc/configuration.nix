@@ -147,6 +147,9 @@
   # fonts
   fonts.packages = with pkgs; [
   	noto-fonts
+	source-code-pro
+	
+
 	nerd-fonts.fira-code
 	powerline-fonts
   	noto-fonts-cjk-sans
