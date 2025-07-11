@@ -43,7 +43,7 @@
 	firefox
 	spotify
 	discord
-	kitty
+	ghostty
 	ruby
 	oh-my-zsh
 	bun

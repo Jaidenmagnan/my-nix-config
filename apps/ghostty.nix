@@ -4,8 +4,8 @@
     source = ./ghostty/config;
   };
 
- xdg.configFile."ghostty/catppuccin-mocha.conf" = lib.mkForce {
-    source = ./ghostty/catppuccin-mocha.conf;
+ xdg.configFile."ghostty/themes/catppuccin-mocha.conf" = lib.mkForce {
+    source = ./ghostty/themes/catppuccin-mocha.conf;
   };
 
 
