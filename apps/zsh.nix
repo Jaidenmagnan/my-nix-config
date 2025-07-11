@@ -7,7 +7,8 @@
 		enable = true;
 		shellAliases = {
 			ll = "ls -l";
-			update = "sudo nixos-rebuild switch --flake /home/jaiden/my-nix-config";
+			update-pc = "sudo nixos-rebuild switch --flake ~/my-nix-config#pc";
+			update-laptop = "sudo nixos-rebuild switch --flake ~/my-nix-config#laptop";
 			dcu = "sudo docker compose up";
 			dcd = "sudo docker compose down";
 			bot-logs = "heroku logs --tail --app neetcoder-production";

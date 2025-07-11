@@ -32,18 +32,7 @@
   };
 
 
-#config.vim = {
-#                theme.enable = true;
-#                theme.name = "gruvbox";
-#                theme.style = "dark";
-#        };
-#
-#  };
-services.gvfs.enable = true;
-
-
-  
-
+  services.gvfs.enable = true;
 
   programs.zsh.enable = true;
   users.users.jaiden.shell = pkgs.zsh;
@@ -52,30 +41,6 @@ services.gvfs.enable = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   virtualisation.docker.enable = true;
-
-  # fonts
-  fonts.packages = with pkgs; [
-  	
-  	noto-fonts
-	nerd-fonts.fira-code
-	wine
-	powerline-fonts
-
-
-	xfce.thunar
-  	noto-fonts-cjk-sans
-  	noto-fonts-emoji
-  	liberation_ttf
-  	fira-code
-	docker
-	heroku
-	postgresql
-
-  	fira-code-symbols
-  	mplus-outline-fonts.githubRelease
-  	dina-font
-  	proggyfonts
-	];
 
 
   environment.variables.EDITOR = "nvim";
@@ -158,32 +123,43 @@ services.gvfs.enable = true;
     htop
     nodejs
     mangohud
-
     man-pages
     man-pages-posix
     steam
-
     clang_16
     clang-tools_16
     fzf
     ripgrep
     nil
-
-
-
-    
-
-    
     grim
     slurp
-    #mako
     wl-clipboard
     lshw
     nnn
     nemo
     git
-    
+	wine
+	postgresql
+	docker
+	heroku
   ];
+
+  # fonts
+  fonts.packages = with pkgs; [
+  	noto-fonts
+	nerd-fonts.fira-code
+	powerline-fonts
+  	noto-fonts-cjk-sans
+  	noto-fonts-emoji
+  	liberation_ttf
+  	fira-code
+  	fira-code-symbols
+  	mplus-outline-fonts.githubRelease
+  	dina-font
+  	proggyfonts
+  ];
+
+
   services.gnome.gnome-keyring.enable = true;
   programs.sway = {
     enable = true;
