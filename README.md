@@ -4,6 +4,7 @@
 </div>
   
 # Screenshots
-![image](https://github.com/user-attachments/assets/b49a54e0-4c16-4ea4-8131-9890e668ac7b)
 
-![image](https://github.com/user-attachments/assets/9ccef550-9a3c-46fd-a14e-94a02cd65bcd)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/972a0aa2-21d6-400b-b0ac-7c8f097d8ffa" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1c7fcb8f-0977-4627-bd87-ac8385cea6b6" />

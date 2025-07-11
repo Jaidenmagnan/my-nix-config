@@ -95,6 +95,8 @@
     ];
   };
 
+  hardware.sensor.iio.enable = true;
+
   # Install firefox.
   programs.firefox.enable = true;
 
