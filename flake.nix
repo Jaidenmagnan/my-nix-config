@@ -24,7 +24,7 @@
     inherit inputs system;
         };
       modules = [
-        ./configuration.nix
+        ./hosts/pc/configuration.nix
       ];
     };
 
