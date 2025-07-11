@@ -101,6 +101,17 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+    environment.variables.EDITOR = "nvim";
+
+	
+    services.gvfs.enable = true;
+
+    programs.zsh.enable = true;
+    users.users.jaiden-laptop.shell = pkgs.zsh;
+
+
+
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -108,7 +119,29 @@
   #  wget
   neovim
   git
+  zsh
+  fzf
+  clang_16
+  clang-tools_16
+  fzf
+
   ];
+
+    # fonts
+  fonts.packages = with pkgs; [
+  	noto-fonts
+	nerd-fonts.fira-code
+	powerline-fonts
+  	noto-fonts-cjk-sans
+  	noto-fonts-emoji
+  	liberation_ttf
+  	fira-code
+  	fira-code-symbols
+  	mplus-outline-fonts.githubRelease
+  	dina-font
+  	proggyfonts
+  ];
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

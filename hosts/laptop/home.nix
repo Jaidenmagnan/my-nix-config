@@ -45,7 +45,7 @@
 	discord
 	kitty
 	ruby
-	oh-my-zs-laptoph
+	oh-my-zsh
 	bun
 	heroku
 	nodejs
