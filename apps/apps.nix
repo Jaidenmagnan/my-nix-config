@@ -9,5 +9,6 @@
 		./zsh.nix
 		./vscode.nix
 		./dunst.nix
+		./ghostty.nix
 	];
 }
