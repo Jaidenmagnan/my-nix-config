@@ -127,6 +127,7 @@
   clang-tools_16
   fzf
   lua
+  qemu
 
   ];
 
