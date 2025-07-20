@@ -54,8 +54,25 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  #services.xserver.displayManager.gdm.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
+
+
+  programs.sway = {
+	  enable = true;
+	  wrapperFeatures.gtk = true;
+  };
+
+
+  services.greetd = {
+	  enable = true;
+	  settings = {
+		  default_session = {
+			  command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd 'sway' ";
+			  user = "greeter";
+		  };
+	  };
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -97,13 +114,16 @@
 
   hardware.sensor.iio.enable = true;
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
     environment.variables.EDITOR = "nvim";
+
+	environment.sessionVariables = {
+		NIXOS_OZONE_WL = "1";
+		OBSIDIAN_USE_WAYLAND = "1";
+		ELECTRON_OZONE_PLATFORM_HINT = "wayland";
+	};
 
 	
     services.gvfs.enable = true;
