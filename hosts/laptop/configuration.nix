@@ -22,6 +22,29 @@
 	};
   };
 
+  # this is for nvidia
+  hardware.nvidia = {
+	  modesetting.enable = true;
+	  powerManagement.enable = false;
+	  powerManagement.finegrained = false;
+	  nvidiaSettings = true;
+	  package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
+
+  	hardware.nvidia.prime = {
+		# Make sure to use the correct Bus ID values for your system!
+		nvidiaBusId = "PCI:1:0:0";
+		amdgpuBusId= "PCI:101:0:0";
+	};
+
+
+
+
+
+
+
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -68,7 +91,7 @@
 	  enable = true;
 	  settings = {
 		  default_session = {
-			  command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd 'sway' ";
+			  command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd 'sway --unsupported-gpu '";
 			  user = "greeter";
 		  };
 	  };
@@ -140,6 +163,8 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
   neovim
+  wl-clipboard
+  lshw
   git
   zsh
   fzf
