@@ -26,6 +26,7 @@ Plug('folke/which-key.nvim') --mappings popup
 Plug('romgrk/barbar.nvim') -- tabs
 Plug('nvim-treesitter/nvim-treesitter') --improved syntax
 Plug('nvim-tree/nvim-tree.lua')
+-- lsp autocomplete stuff start
 Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
 Plug('neovim/nvim-lspconfig')
@@ -35,7 +36,10 @@ Plug('hrsh7th/cmp-path')
 Plug('hrsh7th/cmp-cmdline')
 Plug('hrsh7th/nvim-cmp')
 Plug('L3MON4D3/LuaSnip')
-Plug 'andweeb/presence.nvim'
+-- lsp autocomplete stuff end
+
+Plug 'andweeb/presence.nvim' -- discord status
+Plug 'sbdchd/neoformat' --code formatter
 
 vim.call('plug#end')
 
