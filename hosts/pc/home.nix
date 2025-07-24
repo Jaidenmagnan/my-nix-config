@@ -44,6 +44,7 @@
 	spotify
 	discord
 	ghostty
+	prettierd
 	ruby
 	oh-my-zsh
 	bun

@@ -10,3 +10,11 @@ lspconfig.clangd.setup({
 	cmd = {"clangd"}
 })
 
+--lspconfig.lua_ls.setup({
+	--cmd = {"lua_ls"}
+--}
+
+lspconfig.intelephense.setup({
+	cmd = {"intelephense"}
+})
+

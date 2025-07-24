@@ -12,6 +12,7 @@
 			dcu = "sudo docker compose up";
 			dcd = "sudo docker compose down";
 			bot-logs = "heroku logs --tail --app neetcoder-production";
+			nvf = "nvim \"$(fzf)\"";
 		};
 	  	oh-my-zsh = {
 	    	enable = true;

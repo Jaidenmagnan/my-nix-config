@@ -113,7 +113,9 @@
     wget
 	flatpak
     xdg-desktop-portal-gtk
+	lua
     protonup
+	intelephense
     adwaita-icon-theme
     alsa-utils
     neovim

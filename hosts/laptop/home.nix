@@ -39,7 +39,6 @@
 	obsidian
 	waybar
 	shticker-book-unwritten
-	inputs.quickshell.packages.${pkgs.system}.default
     lunar-client
 	direnv
 	yafetch
