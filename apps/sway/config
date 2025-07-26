@@ -21,8 +21,8 @@ set $menu wmenu-run
 
 set $ws1 "1:code"
 set $ws2 "2:web"
-set $ws3 "3:notes"
-set $ws4 "4:messaging"
+set $ws3 "3:messaging"
+set $ws4 "4:notes"
 set $ws5 "5:music"
 
 
@@ -213,7 +213,7 @@ bindsym $mod+r mode "resize"
     # Special keys to adjust volume via PulseAudio
     bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
     bindsym --locked XF86AudioLowerVolume exec bash ${HOME}/my-nix-config/scripts/volume.sh down
-    bindsym --locked XF86AudioRaiseVolume exec bash ${HOME}/jaiden/my-nix-config/scripts/volume.sh up
+    bindsym --locked XF86AudioRaiseVolume exec bash ${HOME}/my-nix-config/scripts/volume.sh up
     bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
