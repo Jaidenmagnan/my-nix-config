@@ -170,6 +170,7 @@
   fzf
   clang_16
   clang-tools_16
+  arandr
   fzf
   lua
   qemu
