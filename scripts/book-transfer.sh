@@ -4,7 +4,7 @@
 # Usage: ./book-transfer.sh <book_file>
 
 # SFTP connection details
-REMOTE_HOST="100.69.34.43"
+REMOTE_HOST="100.69.34.125"
 REMOTE_USER="root"
 REMOTE_PORT="2222"
 REMOTE_PATH="/mnt/onboard"
