@@ -40,6 +40,7 @@
 	waybar
 	shticker-book-unwritten
     lunar-client
+	cava
 	direnv
 	yafetch
 	firefox
